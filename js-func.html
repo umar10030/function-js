@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in js</title>
+</head>
+<body>
+    <p id="demo"></p>
+    
+    <button type="button" onclick="my(5)">adition</button>
+    <button type="button" onclick="myMul()">multiplytion</button>
+<script>
+    // global variable{
+    var x = 5;
+    //funtions{
+    function my(x, y){
+        if (y === undefined) {
+            y = 2;
+        }
+        document.write(x + y);
+        
+    }
+    function myMul(){
+        //local variable{
+        var y = 2;
+        document.getElementById("demo").innerHTML = x * y;
+        // conection of local and global variable{
+    }
+    //activity 3{
+    var substraction =   function(s1,s2){
+        return s1 - s2;
+    }
+    document.write(substraction(40,20));
+
+
+</script>
+    
+    
+</body>
+</html>
